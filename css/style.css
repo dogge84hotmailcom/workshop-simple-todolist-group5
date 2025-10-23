@@ -1,7 +1,72 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 15%;
+    height: 100vh;
+    
+}
+
+span::first-letter {
+    text-transform: uppercase;
+}
+
+
+input {
+    border: 3px solid magenta;
+    padding: 0.7rem;
+    border-radius: 5px;
+    min-width: 25rem;
+    font-size: 17px;
+}
+
+
+#addBtn {
+    border: 3px solid aquamarine;
+    background-color: aqua;
+    color: maroon;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
 .completed {
     text-decoration: line-through;
 }
 
 span:hover {
     cursor: pointer;
+}
+
+#deleteBtn {
+    margin-left: 10px;
+}
+
+#todos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo {
+    margin-top: 0.7rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid grey;
+}
+
+.todo span {
+    font-size: 20px;
+}
+
+.todo button {
+    margin-left: 1rem;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    font-size: 10px;
 }

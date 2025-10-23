@@ -48,11 +48,12 @@ function renderList() {
     todos.forEach(todo => {
 
         todoList.innerHTML += `
-            <li id="${todo.id}" class="${todo.completed ? "completed" : ""}">
+            <li id="${todo.id}" class="${todo.completed ? "completed todo" : "todo"}">
                 <span >${todo.task}</span>
-                <button >X</button>
+                <button>❌</button>
             </li>
         `
+
     })
 
     console.log(todos)
